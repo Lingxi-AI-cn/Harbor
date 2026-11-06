@@ -1,0 +1,12 @@
+/target/
+/dist/
+/checks/
+**/.swift-module-cache/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+/vendor/desktop-engine/
+/vendor/freerdp-build/
+/vendor/freerdp-install/
+/vendor/.freerdp-install.*/

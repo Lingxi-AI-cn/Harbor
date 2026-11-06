@@ -1,0 +1,5 @@
+{
+  "vendor/ghostty.lock.json": "c8abb2a9806d45d8f4a63263da652b354f64e9ed96fb3a2eb67bde3e78495fed",
+  "vendor/ghostty/include/ghostty.h": "0d87da6fbde0f40f83793e012d13c82705cf960b34c34bd73b8598fd1c8f229a",
+  "vendor/ghostty/macos/GhosttyKit.xcframework/macos-arm64/libghostty-internal.a": "64738293e03c314cdf5dfa2aedb6c0ea85e0e1deebd50d030c5fef9b2a2f65c9"
+}

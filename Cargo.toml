@@ -1,0 +1,19 @@
+[package]
+name = "harbor-terminal"
+version = "0.1.0"
+edition = "2021"
+description = "A native macOS remote workspace"
+license = "MIT"
+build = "app/build.rs"
+
+[[bin]]
+name = "harbor-terminal"
+path = "app/src/main.rs"
+
+[profile.release]
+lto = "thin"
+strip = true
+
+[features]
+default = []
+ghostty = []

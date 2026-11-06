@@ -1,0 +1,3 @@
+# Preserve upstream patch context and third-party notice formatting.
+*.patch -whitespace
+vendor/notices/** -whitespace

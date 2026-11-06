@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/ghostty-org/ghostty",
+  "version": "1.4.0",
+  "commit": "83fb95624b0439ee660c2679b43b38c8b63769cd",
+  "zig": "0.17.0",
+  "optimize": "ReleaseFast",
+  "xcframework_target": "native",
+  "emit_themes": false,
+  "emit_docs": false,
+  "patches": [],
+  "library": "libghostty-internal.a"
+}

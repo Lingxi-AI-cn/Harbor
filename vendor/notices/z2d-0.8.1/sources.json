@@ -1,0 +1,13 @@
+[
+  {
+    "file": "LICENSE",
+    "url": "https://github.com/vancluever/z2d/blob/v0.8.1/LICENSE",
+    "sha256": "3ca3ed7707db3f5561bff7c2eec62ee1c127947af928189572148f122917b474"
+  },
+  {
+    "file": "COPYING",
+    "url": "https://github.com/vancluever/z2d/blob/v0.8.1/COPYING",
+    "git_blob_sha": "570135f7c18cc45c5a666d9370e4277c25ab08bc",
+    "sha256": "d8d2562a7cb68ffdfe91fc66af1ed4a8a4e272aa4ab59bea7451ba34b9aba3d4"
+  }
+]
