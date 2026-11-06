@@ -8,8 +8,10 @@ import json,subprocess
 root=Path.cwd()
 for item in json.loads((root/'DEPENDENCIES.json').read_text()):
     path=root/item['path']
-    if path.exists():
-        if not (path/'.git').exists():raise SystemExit('Existing dependency is not a Git checkout: '+item['path'])
+    if path.is_symlink():raise SystemExit('Dependency path is a symbolic link: '+item['path'])
+    if path.exists() and (not path.is_dir() or (not (path/'.git').exists() and any(path.iterdir()))):
+        raise SystemExit('Existing dependency is not a Git checkout or empty directory: '+item['path'])
+    if (path/'.git').exists():
         origin=subprocess.check_output(['git','-C',str(path),'remote','get-url','origin'],text=True).strip()
         if origin != item['url']:raise SystemExit('Dependency origin mismatch: '+item['path'])
         head=subprocess.run(['git','-C',str(path),'rev-parse','--verify','HEAD'],capture_output=True,text=True)

@@ -90,7 +90,7 @@ bash app/tests/appearance/build.sh
 python3 app/tests/appearance/run.py
 ```
 
-The current local appearance build passed 33 appearance checks, a separate cross-process preference check, and 77 application self-checks. These are bounded local results, not general remote-server certification. Details, artifact identities, and reproduction commands are in the [verification notes](app/VERIFICATION.md).
+An earlier local build passed 33 appearance checks, a separate cross-process preference check, and 77 application self-checks. These historical results do not establish acceptance of the current notarized artifact: its corresponding unsigned build has unresolved self-test, appearance, and preference-persistence results that require verification in a normal desktop session. Details, artifact identities, and reproduction commands are in the [verification notes](app/VERIFICATION.md).
 
 Generated apps, test logs and screenshots under `checks/` are ignored by Git and are not included. A complete local build of the public source with freshly fetched Ghostty/FreeRDP dependencies has passed; see [public-source build validation](app/PUBLIC-BUILD-VALIDATION.md). No GitHub CI result, Developer ID release, or cross-machine byte reproducibility is claimed.
 

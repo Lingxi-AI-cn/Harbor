@@ -90,7 +90,7 @@ bash app/tests/appearance/build.sh
 python3 app/tests/appearance/run.py
 ```
 
-当前本地外观构建通过了 33 项外观检查、独立的跨进程偏好保存检查，以及 77 项应用自检。这些是限定范围的本地结果，不代表通用远程服务器兼容认证。验证范围、产物身份与复现命令见[验证记录](app/VERIFICATION.md)。
+较早的本地构建曾通过 33 项外观检查、独立的跨进程偏好保存检查，以及 77 项应用自检。这些历史结果不能作为当前公证产物的验收结论：其对应的签名前构建仍有未关闭的自检、外观及偏好保存结果，需要在正常桌面会话复验。验证范围、产物身份与复现命令见[验证记录](app/VERIFICATION.md)。
 
 生成的应用、日志、截图及 `checks/` 下的验收产物不纳入 Git，也不随源码提供。已从公开源码及新获取的 Ghostty/FreeRDP 依赖完成本地完整构建，见[公开源码构建验证](app/PUBLIC-BUILD-VALIDATION.md)。尚未宣称 GitHub CI 通过、Developer ID 正式发布或跨机器字节可复现。
 
